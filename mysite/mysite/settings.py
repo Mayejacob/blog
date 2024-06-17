@@ -37,7 +37,7 @@ EMAIL_PORT = config('EMAIL_PORT_ADD')
 EMAIL_USE_SSL = True
 DEFAULT_FROM_EMAIL = config('DEFAULT_FROM_EMAIL')
 # Application definition
-
+SITE_ID = 1
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'taggit',
     'blog.apps.BlogConfig',
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
 ]
 
 MIDDLEWARE = [
